@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .highlight {
+                color: red;
+                font-weight: bold;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 id="title">DOM Selection practice</h2>
+            <p class="info">Paragraph 1</p>
+            <p class="info">Paragraph 2</p>
+            <p class="info">Paragraph 3</p>
+
+            <button id="changeTextBtn">Change Text</button>
+            <button id="changeStyleBtn">Change Style</button>
+            <button id="changeClassBtn">Change Class</button>
+
+        <script >
+            const  title=document.getElementById("title");
+            console.log(title);
+
+            const firstpara=document.querySelector(".info");
+            const cTextButton=document.getElementById("changeTextBtn");
+            cTextButton.addEventListener("click",function () {
+                firstpara.style.color="blue"
+            });
+
+        </script>
+    </body>
+</html>
